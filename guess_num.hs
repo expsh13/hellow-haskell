@@ -6,6 +6,8 @@
 -- 正解したら「Correct! You guessed it in X tries!」と表示して終了
 -- 試行回数をカウントする
 
+import System.Random
+
 checkNum :: Int -> Int -> IO ()
 checkNum targetNum count = do
   num <- readLn
@@ -21,6 +23,6 @@ checkNum targetNum count = do
 
 main::IO()
 main = do
-  let targetNum = 50
+  targetNum <- randomRIO(1,100)
   putStrLn "予想する数値を入力してください。"
   checkNum targetNum 0
