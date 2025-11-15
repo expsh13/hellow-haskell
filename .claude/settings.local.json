@@ -2,7 +2,16 @@
   "permissions": {
     "allow": [
       "Bash(claude --version)",
-      "WebFetch(domain:docs.anthropic.com)"
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(runghc:*)",
+      "Bash(stack ghc:*)",
+      "Bash(./count_word:*)",
+      "mcp__ide__getDiagnostics",
+      "Bash(stack init:*)",
+      "Bash(stack build:*)",
+      "Bash(stack --version:*)",
+      "Bash(stack clean:*)",
+      "Bash(ghcup install:*)"
     ],
     "deny": []
   },

@@ -1,0 +1,14 @@
+name: hellow-haskell
+version: 0.1.0.0
+
+dependencies:
+  - base >= 4.7 && < 5
+  - containers
+
+ghc-options:
+  - -Wall
+
+executables:
+  count_word:
+    main: count_word.hs
+    source-dirs: .

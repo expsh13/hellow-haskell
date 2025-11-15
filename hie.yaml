@@ -1,0 +1,4 @@
+cradle:
+  stack:
+    - path: "./count_word.hs"
+      component: "hellow-haskell:exe:count_word"
